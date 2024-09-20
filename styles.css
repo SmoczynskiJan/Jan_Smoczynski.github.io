@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  background-color: rgb(255, 222, 192);
+  font-family: sans-serif;
+}
+.colflex {
+  justify-content: center;
+  display: inline-flex;
+  flex-direction: column;
+}
+.cflex {
+  display: flex;
+  justify-content: center;
+}
+.page {
+  background-color: rgb(202, 190, 176);
+  margin: 3rem;
+}
+.br4 {
+  border-radius: 4rem;
+  padding: 1rem;
+}
+.br3 {
+  border-radius: 3rem;
+  padding: 1rem;
+}
+.rt {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.rb {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.mocimage {
+  width: 50rem;
+  height: 25rem;
+  background-color: aqua;
+}
