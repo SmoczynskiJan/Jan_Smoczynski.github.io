@@ -1,29 +1,70 @@
+:root {
+/*_________________________ Border Var */
+--border-radius:3rem;
+--card-margin:-6rem;
+/*_________________________ Color Var */
+  --main1-color: #27213c;
+  --main2-color:#5a352a;
+  --main3-color:#a33b20;
+  --main4-color:#a47963;
+  --main5-color:#a6a57a;
+}
+/*_________________________________________________ HTML Elements */
 body{
   margin: 0;
-  padding: 0;
-}
-.grid{
-  display: grid;
-  grid-template-rows: 1fr 2fr 2fr 2fr 1fr;
+  padding: 10vh 0 5vh;
+  background-image: url(img/pexels-freestockpro-345522.jpg);
+  background-size: cover;
+  background-attachment: fixed;
 }
 
+/*_________________________________________________ Id's */
+/* #main_container >* {
+  height: fit-content;
+} */
+
+#main_container :not(:first-child){
+  margin-top: var(--card-margin);
+}
+
+#main_container :last-child{
+  padding-bottom: 2rem;
+}
+
+
+/*_________________________________________________ Classes */
+.f_container{
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+}
+.f_center{
+  display: flex;
+  justify-content: center;
+}
 .c-bl{
-  background-color  : #27213c;
+  background-color  : var(--main1-color);
 }
 .c-d_br{
-  background-color: #5a352a;
+  background-color: var(--main2-color);
 }
 .c-r_br{
-  background-color: #a33b20;
+  background-color:var(--main3-color);
 }
 .c-l_br{
-  background-color: #a47963;
+  background-color:var(--main4-color);
 }
-.c-p_bg{
-  background-color: #a6a57a;
+.c-p_br{
+  background-color: var(--main5-color);
 }
-
-.testSize{
-  width: 85%;
-  height: 100px;
+.profile_img{
+  height: 40vh;
+  border-radius: 5% 30% 10% 20%;
+  border-style: double;
+  border-color: red;
+}
+.card{
+  padding: 2rem 2rem 8rem;
+  height: fit-content;
+  border-radius: var(--border-radius);
 }
