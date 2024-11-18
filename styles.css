@@ -16,12 +16,10 @@ body{
   background-image: url(img/pexels-freestockpro-345522.jpg);
   background-size: cover;
   background-attachment: fixed;
+  background-position: center;
 }
 
 /*_________________________________________________ Id's */
-/* #main_container >* {
-  height: fit-content;
-} */
 
 #main_container :not(:first-child){
   margin-top: var(--card-margin);
