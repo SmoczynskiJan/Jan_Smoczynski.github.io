@@ -37,18 +37,23 @@ body{
 }
 .c-bl{
   background-color  : var(--main1-color);
+  color: var(--main4-color);
 }
 .c-d_br{
   background-color: var(--main2-color);
+  color: var(--main4-color);
 }
 .c-r_br{
   background-color:var(--main3-color);
+  color: var(--main1-color);
 }
 .c-l_br{
   background-color:var(--main4-color);
+  color: var(--main1-color);
 }
 .c-p_br{
   background-color: var(--main5-color);
+  color: var(--main1-color);
 }
 .profile_img{
   height: 30vh;
