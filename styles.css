@@ -13,20 +13,21 @@
 body{
   display: flex;
   justify-content: center;
-  margin: 0;
-  padding: 10vh 0 5vh;
+  margin: 0vh;
+  padding: 10vh 0vh 5vh;
   background-image: url(img/pexels-freestockpro-345522.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
+  overflow-y: scroll;
+  overscroll-behavior-y: contain;
 }
 
 /*_________________________________________________ Id's */
-#main_container :not(:first-child){
+#main_container > .card:not(:nth-child(-n + 2)){
   margin-top: var(--card-margin);
 }
-
-#main_container :last-child{
+#main_container > .card:last-child{
   padding-bottom: 2rem;
 }
 
@@ -52,7 +53,7 @@ body{
   background-color: var(--main5-color);
 }
 .profile_img{
-  height: 40vh;
+  height: 30vh;
   border-radius: 5% 30% 10% 20%;
   border-style: double;
   border-color: red;
