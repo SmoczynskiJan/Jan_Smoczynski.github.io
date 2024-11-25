@@ -14,7 +14,7 @@ body{
   display: flex;
   justify-content: center;
   margin: 0vh;
-  padding: 10vh 0vh 5vh;
+  padding: 0 0 5vh;
   background-image: url(img/pexels-freestockpro-345522.jpg);
   background-size: cover;
   background-attachment: fixed;
@@ -29,6 +29,17 @@ body{
   padding-bottom: 2rem;
 }
 
+#hero{
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: repeat(2, 33.92vh) 15vh;
+  padding: 2rem 2rem 8rem;
+  border-radius: 0  0  var(--border-radius) var(--border-radius);
+  background-color: #a47963;
+  margin-bottom: 20vh;
+  justify-items: center;
+}
+
 /*_________________________________________________ Classes */
 .f_container{
   width: 80vw;
@@ -37,18 +48,23 @@ body{
 }
 .c-bl{
   background-color  : var(--main1-color);
+  color: var(--main4-color);
 }
 .c-d_br{
   background-color: var(--main2-color);
+  color: var(--main4-color);
 }
 .c-r_br{
   background-color:var(--main3-color);
+  color: var(--main1-color);
 }
 .c-l_br{
   background-color:var(--main4-color);
+  color: var(--main1-color);
 }
 .c-p_br{
   background-color: var(--main5-color);
+  color: var(--main1-color);
 }
 .profile_img{
   height: 30vh;
@@ -60,4 +76,32 @@ body{
   padding: 2rem 2rem 8rem;
   height: fit-content;
   border-radius: var(--border-radius);
+}
+
+.mainImage{
+  grid-area: 1 / 2 / 3 / 3;
+  align-self: center;
+}
+.heroImg{
+  height: 50vh;
+  border-radius: 50%;
+}
+
+.buttonLeft{grid-area: 1 / 1 / 4 / 2; 
+  align-self: center;}
+.buttonRight { grid-area: 1 / 3 / 4 / 4; 
+  align-self: center;}
+.text { grid-area: 3 / 2 / 4 / 3; }
+
+#B1{
+  width: 4rem;
+  height: 4rem;
+}
+
+.bouble{
+  position: absolute;
+  top: 10vh;
+  left: 8vw;
+  border-radius: 50%;
+   background-image: radial-gradient(#FFFFFF ,#CCCCCC 40%, #999999 55%,#6b3600 71%);
 }
