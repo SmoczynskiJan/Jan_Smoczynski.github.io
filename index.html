@@ -11,38 +11,10 @@
   <body>
     <container id="main_container" class="f_container">
       <div id="hero">
-        <div class="buttonLeft">
-          <button class="knowMe">Poznaj mnie</button>
-        </div>
-        <div class="mainImage">
-          <img
-            class="heroImg"
-            src="img/pexels-rodrigo-souza-1275988-2531553.jpg"
-          />
-        </div>
-        <div class="buttonRight">
-          <button>Zobacz więcej</button>
-        </div>
-        <div class="text">
-          <p>
-            Zapolony miłośnik dobrego design’u. Samouk fullstack po studiach
-            informatycznych ze skłonnościami szybkiego przysfajania nowej
-            wiedzy. Wychowany przez zagraniczny youtube z pełnym pakietem
-            akcentów.
-          </p>
-        </div>
-        <div class="boubleContainer">
-          <div id="B1"></div>
-          <div id="B2"></div>
-          <div id="B3"></div>
-          <div id="B4"></div>
-          <div id="B5"></div>
-          <div id="B6"></div>
-          <div id="B7"></div>
-          <div id="B8"></div>
-          <div id="B9"></div>
-          <div id="B10"></div>
-        </div>
+        <a href="#aboutMe"><button>Get to know me</button></a>
+        <a href="#projects"><button>My projects</button></a>
+        <a href="#career"><button>My history</button></a>
+        <a href="#skills"><button>Skills</button></a>
       </div>
       <div class="card c-p_br">
         <h1>Coś o mnie</h1>
@@ -56,7 +28,7 @@
           vestibulum auctor quis massa nunc lobortis?
         </p>
       </div>
-      <div class="card c-bl">
+      <div id="skills" class="card c-bl">
         <h1>umiejki</h1>
         <p>
           Fusce nisi iaculis egestas parturient magnis. Gravida id parturient,
@@ -67,11 +39,11 @@
           commodo magna amet ut dolor.
         </p>
       </div>
-      <div class="card c-d_br">
+      <div id="projects" class="card c-d_br">
         <h1>My projects</h1>
         Menu projektów
       </div>
-      <div class="card c-r_br">
+      <div id="career" class="card c-r_br">
         <p>
           At sociosqu parturient molestie eleifend imperdiet rhoncus nostra
           etiam. Laoreet ac finibus aliquam metus nisi nisl scelerisque enim.
@@ -81,7 +53,7 @@
           augue. Ut viverra fames, donec cursus vestibulum euismod mus?
         </p>
       </div>
-      <div class="card c-l_br">
+      <div id="aboutMe" class="card c-l_br">
         <h1>hobby</h1>
         <p>
           Justo tempor malesuada; magna tempus lectus pellentesque. Orci
@@ -94,7 +66,8 @@
         </p>
       </div>
     </container>
-
+    <!-- arrow up -->
+    <a href="#hero"><div id="goUp"></div></a>
     <script src="index.js"></script>
   </body>
 </html>
