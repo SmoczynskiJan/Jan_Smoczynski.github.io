@@ -68,7 +68,7 @@ button:active {
   background-image: url(img/black-linen.png);
   margin-bottom: 20vh;
   padding-bottom: 6vh;
-  align-content: center;
+  align-content: space-around;
   justify-content: space-around;
   align-items: center;
 }
