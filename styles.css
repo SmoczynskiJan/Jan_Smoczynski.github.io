@@ -7,7 +7,7 @@
   --main2-color: #5a352a;
   --main3-color: #a33b20;
   --main4-color: #a47963;
-  --main5-color: #a6a57a;
+  --main5-color: #f8f7fa;
 }
 /*_________________________________________________ HTML Elements */
 html {
@@ -22,6 +22,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
+  color: var(--main5-color);
 }
 button {
   width: 10rem;
@@ -59,7 +60,7 @@ button:active {
 }
 
 #hero {
-  height: 50vh;
+  height: 94vh;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -71,19 +72,6 @@ button:active {
   align-content: space-around;
   justify-content: space-around;
   align-items: center;
-}
-
-#goUp {
-  position: fixed;
-  bottom: 2.5rem;
-  right: 2.5rem;
-  overflow: hidden;
-  width: 3rem;
-  height: 3rem;
-  border-radius: 50%;
-  background-image: url(icons/fast-forward.png);
-  background-size: contain;
-  rotate: -90deg;
 }
 
 /*_________________________________________________ Classes */
