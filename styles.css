@@ -1,3 +1,5 @@
+/* import */
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
 :root {
   /*_________________________ Border Var */
   --border-radius: 3rem;
@@ -62,16 +64,16 @@ button:active {
 #hero {
   height: 94vh;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   border-radius: 0 0 var(--border-radius) var(--border-radius);
-  background-color: #a47963;
-  background-image: url(img/black-linen.png);
   margin-bottom: 20vh;
   padding-bottom: 6vh;
-  align-content: space-around;
-  justify-content: space-around;
-  align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  align-items: start;
+  justify-content: center;
 }
 
 /*_________________________________________________ Classes */
@@ -104,4 +106,14 @@ button:active {
   padding: 2rem 2rem 8rem;
   height: fit-content;
   border-radius: var(--border-radius);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+.name {
+  padding-left: 2rem;
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 7rem;
+  color: rgb(82, 97, 82);
+  -webkit-text-stroke: 0.1rem rgb(51, 70, 51);
 }
