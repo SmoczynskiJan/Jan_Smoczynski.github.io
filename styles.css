@@ -132,6 +132,7 @@ h1 {
   background-size: 100%;
   justify-content: center;
   align-items: center;
+  border-radius: 0.5rem;
 }
 .short {
   height: 50%;
