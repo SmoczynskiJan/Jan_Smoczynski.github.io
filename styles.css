@@ -59,7 +59,7 @@ h1 {
 /*_________________________________________________ Classes */
 .card > .titleAnchor > h1 {
   position: relative;
-  top: -11.7vh;
+  top: -5.5rem;
   left: 1vw;
   font-family: "Merriweather", serif;
   font-weight: 1000;
