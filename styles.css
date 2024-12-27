@@ -177,6 +177,10 @@ h1 {
   border-radius: 0.2rem;
   transition: 0.2s;
 }
+
+.jobMark {
+  background-color: #f8f7fa;
+}
 .markC {
   flex-direction: column;
   display: flex;
