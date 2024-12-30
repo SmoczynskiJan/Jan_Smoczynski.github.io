@@ -16,6 +16,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
+  font-family: "Merriweather", serif;
   display: flex;
   justify-content: center;
   margin: 0vh;
@@ -26,12 +27,7 @@ body {
   background-position: center;
   color: var(--main5-color);
 }
-h1 {
-  background-color: inherit;
-  display: inline-block;
-  padding: 0 1rem;
-  border-radius: 1rem 1rem 0 0;
-}
+
 /*_________________________________________________ Id's */
 #main_container > .card:not(:nth-child(-n + 2)) {
   margin-top: var(--card-margin);
@@ -61,8 +57,13 @@ h1 {
   position: relative;
   top: -5.5rem;
   left: 1vw;
-  font-family: "Merriweather", serif;
   font-weight: 1000;
+}
+.sectionTitle {
+  background-color: inherit;
+  display: inline-block;
+  padding: 0 1rem;
+  border-radius: 1rem 1rem 0 0;
 }
 .titleAnchor {
   height: 0;
@@ -94,7 +95,6 @@ h1 {
 
 .nameContener {
   padding-left: 1rem;
-  font-family: "Merriweather", serif;
   font-weight: 1000;
   font-style: normal;
   color: #5a352a;
@@ -249,14 +249,21 @@ h1 {
   flex-direction: row;
   justify-content: space-between;
 }
+.postDate {
+  text-wrap: nowrap;
+}
 .jobTextInfo {
   display: flex;
   flex-direction: column;
+  padding-right: 1rem;
 }
-.jobTechStack {
+.jobTechStack > div {
   background-color: #f8f7fa;
   width: 30rem;
   height: 30rem;
+}
+.jobTasks {
+  text-wrap: balance;
 }
 .Finture {
   display: none;
@@ -264,9 +271,22 @@ h1 {
 .Nexio {
   display: none;
 }
+.FintureLi {
+  display: none;
+}
+.NexioLi {
+  display: none;
+}
 
 .EITS {
   display: block;
+}
+.jobTechStack > div > div {
+  border-radius: 50%;
+  height: 6rem;
+  width: 6rem;
+  background-position: center;
+  background-size: cover;
 }
 html:has(.markFinture:hover) .Finture {
   display: block;
@@ -285,5 +305,28 @@ html:has(.markNexio:hover) .Nexio {
   display: block;
 }
 html:has(.markNexio:hover) .EITS {
+  display: none;
+}
+
+.EITSLi {
+  display: list-item;
+}
+html:has(.markFinture:hover) .FintureLi {
+  display: list-item;
+}
+html:has(.markFinture:hover) .NexioLi {
+  display: none;
+}
+html:has(.markFinture:hover) .EITSLi {
+  display: none;
+}
+
+html:has(.markNexio:hover) .FintureLi {
+  display: none;
+}
+html:has(.markNexio:hover) .NexioLi {
+  display: list-item;
+}
+html:has(.markNexio:hover) .EITSLi {
   display: none;
 }
