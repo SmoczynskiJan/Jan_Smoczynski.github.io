@@ -27,7 +27,6 @@ body {
   background-position: center;
   color: var(--main5-color);
 }
-
 /*_________________________________________________ Id's */
 #main_container > .card:not(:nth-child(-n + 2)) {
   margin-top: var(--card-margin);
@@ -391,4 +390,30 @@ html:has(.markNexio:hover) .NexioLi {
 }
 html:has(.markNexio:hover) .EITSLi {
   display: none;
+}
+
+.aboutMe {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+.aboutMeText {
+  padding: 2rem;
+}
+
+.imgContainer {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3rem;
+  justify-content: center;
+  gap: 3rem;
+}
+.imgContainer > img {
+  height: 15rem;
+}
+
+.aboutMeText > p {
+  font-size: large;
+  text-wrap: balance;
+  padding-bottom: 1rem;
 }
